@@ -1,0 +1,7 @@
+function UserFunction() {
+    function sayHello() {
+    alert('Hello!');
+  }
+  }
+
+export default UserFunction;
