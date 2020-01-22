@@ -16,43 +16,8 @@ import {Nav, Navbar, NavDropdown,MenuItem, Tabs, Form,ButtonToolbar, Button, Tab
 class Mainpage extends React.Component {
   render() {
     return (
-      <Router>
-      <Container fluid={true}>
-        <Form>
-         
-         
-
-         
-        </Form>
-      
-        <Navbar   bg="light" variant="light">
-    
-    <Nav >
-      
-      <div className="navbar-nav">
-      <div className="navbar-nav"> <Link to="/AboutUs" className="nav-link">Home </Link> </div>
-      <div className="navbar-nav"> 
-      </div>
-      <div className="navbar-nav"> <Link to="/profile" className="nav-link">Profile Upload</Link>
-      </div>
-      <div className="navbar-nav"> <Link to="/contact us" className="nav-link">Contact US</Link>
-      </div>
-    </div>
-    
      
-    </Nav>
-    <Switch>
-              <Route exact path='/' component={Mainpage} />
-              <Route path='/contact' component={Contact} />
-              <Route path='/about' component={AboutUs} />
-          </Switch>
-    
-    <Form inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-primary">Search</Button>
-    </Form>
-  </Navbar>
-       
+      <Container fluid={true}>       
   <Form>  
           
         <div class="login-page">
@@ -75,16 +40,10 @@ class Mainpage extends React.Component {
      </Form>
      
       
-     <Navbar   bg="light" variant="light">
-    
-    <Nav >
-      
-      <div class="footer"> All rights reserved by Muslim Al-Nikah</div>
-    </Nav>
-    </Navbar>
+     
     
   </Container>
-  </Router>
+  
       
     );
   }
