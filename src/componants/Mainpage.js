@@ -16,7 +16,7 @@ import {Nav, Navbar, NavDropdown,MenuItem, Tabs, Form,ButtonToolbar, Button, Tab
 class Mainpage extends React.Component {
   render() {
     return (
-     
+      <div id="content">
       <Container fluid={true}>       
   <Form>  
           
@@ -43,7 +43,7 @@ class Mainpage extends React.Component {
      
     
   </Container>
-  
+  </div> 
       
     );
   }

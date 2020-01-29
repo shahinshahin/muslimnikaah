@@ -4,14 +4,15 @@ import {Nav, Navbar, NavDropdown,MenuItem, Tabs, Form,ButtonToolbar, Button, Tab
 export default class Footer extends Component {
     render(){
         return (
+            <div id="footer">
             <Navbar   bg="light" variant="light">
     
             <Nav >
               
-              <div class="footer"> All rights reserved by Muslim Al-Nikah</div>
+              <div > All rights reserved by Muslim Al-Nikah</div>
             </Nav>
             </Navbar>
-
+            </div>
         )
     }
 }
