@@ -1,78 +1,141 @@
-
-.login-page {
-    width: 360px;
-    padding: 8% 0 0;
-    margin: auto;
-  }
-  .navbar-nav {
-    padding-left:30px;
-    padding-right:30px;
-    color: #130505;
-  }
-  .footer{
-    padding-left:80px;
-    padding-right:80px;
-    align-content:center;
-  }
-  .form {
-    position: relative;
-    z-index: 1;
-    background: #FFFFFF;
-    max-width: 360px;
-    margin: 0 auto 100px;
-    padding: 45px;
-    text-align: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  }
-  .form input {
-    font-family: "Roboto", sans-serif;
-    outline: 0;
-    background: #f2f2f2;
-    width: 100%;
-    border: 0;
-    margin: 0 0 15px;
-    padding: 15px;
-    box-sizing: border-box;
-    font-size: 14px;
-  }
-  .form button {
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    outline: 0;
-    background: #4CAF50;
-    width: 100%;
-    border: 0;
-    padding: 15px;
-    color: #FFFFFF;
-    font-size: 14px;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
-    cursor: pointer;
-  }
-  .form button:hover,.form button:active,.form button:focus {
-    background: #43A047;
-  }
-  .form .message {
-    margin: 15px 0 0;
-    color: #b3b3b3;
-    font-size: 12px;
-  }
-  .form .message a {
-    color: #4CAF50;
-    text-decoration: none;
-  }
-  .form .register-form {
-    display: none;
-  }
-  body{        
-    padding-top: 60px;
-    padding-bottom: 40px;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+*{
+    padding: 100;
+    margin: 0;
+    outline: none;
 }
+body{
+    font-family: 'Roboto', sans-serif !important;
+    height:100vh;
+    color: #3a3e42 !important;
+}
+.AppForm .AppFormLeft h1{
+    font-size: 35px;
+    content: "."; 
+    visibility: hidden;
+}
+.AppForm .AppFormLeft input:focus{
+    border-color: #ced4da;
+}
+
+.AppForm .AppFormLeft input::placeholder{
+   font-size: 15px;
+}
+.AppForm .AppFormLeft i{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.AppForm .AppFormLeft a{
+    color: #3a3e42 ;
+}
+.AppForm .AppFormLeft button{
+    background: linear-gradient(45deg,#8D334C,#CF6964);
+    border-radius: 30px;
+}
+.AppForm .AppFormLeft p span{
+  color: #007bff;
+}
+.AppForm .AppFormRight{
+    background-image: url('https://i.ibb.co/tDLqQtj/bg.jpg');
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+.AppForm .AppFormRight:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#8D334C,#CF6964);
+    opacity: 0.5;
+}
+.AppForm .AppFormRight h2{
+    z-index: 1;
+}
+.AppForm .AppFormRight h2::after{
+  content: "";
+  position: absolutece;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  bottom: 0;
+  left:50%;
+  transform: translateX(-50%);
+}
+.AppForm .AppFormRight p{
+    z-index: 1;
+}
+.next {
+  font: 23px "Play";
+  position: relative;
+  margin-left: 605px;
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+body {
+    overflow: hidden;
+}
+#content {
+    width: 100%;
+    height:80%;
+}
+body {
+    overflow: hidden;
+}
+
+
+
+
+
+header {
+width: 100%;
+height:10%;
+background-image: url(../images/bg2.jpg);
+position: fixed;
+top: 0;
+}
+
+
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  .row.content {height: 450px};
+  .sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+  }
+  footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+  }
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {height:auto;} 
+  }
+  #templatemo_menu {
+	clear: both;
+	width: 100%;
+	height: 10%;
+	padding: 0 10px;
+	
+}
+
+
+  
 
 .fixed-header, .fixed-footer{
     width: 100%;
     position: fixed;        
-    background: #333;
+    /* background-image: url(../images/bg2.jpg); */
     padding: 10px 0;
     color: #fff;
 }
@@ -92,76 +155,7 @@ nav a{
 .container p{
     line-height: 200px; /* Create scrollbar to test positioning */
 }
-  
-  
- 
-  
-html { height: 100%; }
-body {
-    height:100%;
-    min-height: 100%;
-    background: #000000;
-    color: #FFFFFF;
-    position:relative;
-}
-#headermuslimalnikah {
-    height:20px;
-    width:100%;
-    top:0px;
-    left:0px;    
-    position:fixed;
-    background-image: url("../images/bg2.jpg");
-}
-#footer {
-    height:50px;
-    width:100%;
-    bottom:0px;
-    left:0px;
-    background: #CCCCCC;
-    position:fixed;
-    color: rgb(20, 11, 11);
-    text-align:justify;
 
-    
-}
-#content {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    height:100%;
-    padding: 0 20px;
-}
-#content > div {
-    padding: 70px 0;
-}
 
-  
-.fixed-header{
-  width: 100%;
-  position: fixed;        
-  background: #333;
-  padding: 10px 0;
-  color: #fff;
-}
-.fixed-footer{
-  width: 100%;
-  position: fixed;        
-  background: #333;
-  padding: 10px 0;
-  color: #fff;
-}
-.container{
-    width: 80%;
-    margin: 0 auto; /* Center the DIV horizontally */
-}
-  body {
-  
-    background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-    background: -moz-linear-gradient(right, #76b852, #8DC26F);
-    background: -o-linear-gradient(right, #76b852, #8DC26F);
-    background: linear-gradient(to left, #76b852, #8DC26F);
-    font-family: "Roboto", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;      
-  }
-  
+
+

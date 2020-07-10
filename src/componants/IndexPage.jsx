@@ -5,7 +5,7 @@ import '../componants/bundles/css/style.css';
 import '../componants/bundles/css/fontawesome-all.min.css';
 import '../componants/bundles/css/fontawesome-all.min.css';
 import { HomePage } from '../HomePages/HomePage';
-var Home = function () {
+var IndexPage = function () {
   return React.createElement('div', {
       'id': 'page',
       'className': 'page'
@@ -21,7 +21,7 @@ var Home = function () {
       'id': 'logo'
   }, React.createElement('h1', {}, React.createElement('a', {
       'className': 'editContent',
-      'href': '/',
+      'href': '/home',
       'style': {
           outline: 'none',
           cursor: 'inherit'
@@ -40,7 +40,7 @@ var Home = function () {
       'id': 'drop'
   }), React.createElement('ul', { 'className': 'menu' }, React.createElement('li', { 'className': 'active' },
    React.createElement('a', {
-      'href': 'index.html',
+      'href': '/home',
       'style': {
           outline: 'none',
           cursor: 'inherit'
@@ -74,13 +74,7 @@ var Home = function () {
           outline: 'none',
           cursor: 'inherit'
       }
-  })), React.createElement('a', { 'href': '#' }, 'Dropdown ', React.createElement('span', {
-      'className': 'fa fa-angle-down',
-      'aria-hidden': 'true'
-  })), React.createElement('input', {
-      'type': 'checkbox',
-      'id': 'drop-2'
-  }), 
+  })),  
   React.createElement('ul', {}, React.createElement('li', {}, React.createElement('a', {
       'href': '/contact',
       'style': {
@@ -108,4 +102,4 @@ var Home = function () {
       'className': 'banner-button btn mt-md-5 mt-4'
   }, 'Know More'),)))));
 };
-export default Home;
+export default IndexPage;
